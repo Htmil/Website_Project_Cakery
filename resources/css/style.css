@@ -1,10 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:200,300,regular,500,600,700,800);
+
 :root {
     --color-title: rgb(255, 156, 161);
     --color-white:  rgb(250, 249, 246);
     --color-black: rgb(53, 57, 53); 
+    --color-CallToAction: rgba(71, 209, 186, 1.0);
+    --font-fontfamily: "Dosis", sans-serif;
+    --font-weight-large: 700; 
+    --font-weight-medium: 600; 
+}
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-fontfamily);
 }
 
 h1{
     color: var(--color-title);
+    font-weight: var(--font-weight-large);
 }
