@@ -2,12 +2,13 @@
 
 :root {
     --color-title: rgb(255, 156, 161);
-    --color-white:  rgb(250, 249, 246);
+    --color-white:  rgb(255, 255, 255);
     --color-black: rgb(53, 57, 53); 
     --color-CallToAction: rgba(71, 209, 186, 1.0);
     --font-fontfamily: "Dosis", sans-serif;
     --font-weight-large: 700; 
-    --font-weight-medium: 600; 
+    --font-weight-medium: 600;
+    --text-Shadow: -1px 2px 15px #00000096;
 }
 
 *{
@@ -17,7 +18,78 @@
     font-family: var(--font-fontfamily);
 }
 
-h1{
+nav {
+    position: absolute;
+    z-index: 30;
+    top: 20px;
+    left: 0px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-weight: var(--font-weight-large);
+    padding: 30px;
+    text-shadow: var(--text-Shadow);
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -moz-transition: .5s linear;
+    -ms-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+nav a:hover {
+    opacity: .8;
+}
+
+header{
+    display: flex;
+    height: 100vh;
+}
+
+header h1{
     color: var(--color-title);
     font-weight: var(--font-weight-large);
+}
+
+.coverImage{
+    width: 50%;
+    height: 100%;
+    background-image: url(/resources/images/coverfoto-cake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.coverCTA{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 115px;
+    height: 115px;
+    background-image: url(/resources/images/logo_munamii.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ctaText{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.ctaButton {
+    background-color: var(--color-CallToAction);
+    color: var(--color-white);
+    font-weight: var(--font-weight-large);
+    font-size: 20px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
