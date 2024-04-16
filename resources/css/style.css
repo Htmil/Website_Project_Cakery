@@ -1,0 +1,10 @@
+:root {
+    --color-title: rgb(255, 156, 161);
+    --color-white:  rgb(250, 249, 246);
+    --color-black: rgb(53, 57, 53); 
+
+}
+
+h1{
+    color: var(--color-title);
+}
