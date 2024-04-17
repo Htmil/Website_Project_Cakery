@@ -30,14 +30,14 @@ nav a {
     font-weight: var(--font-weight-large);
     padding: 30px;
     text-shadow: var(--text-Shadow);
-    transition: .5s linear;
-    -webkit-transition: .5s linear;
-    -moz-transition: .5s linear;
-    -ms-transition: .5s linear;
-    -o-transition: .5s linear;
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
 }
 nav a:hover {
-    opacity: .8;
+    opacity: .6;
 }
 
 header{
@@ -51,7 +51,7 @@ header h1{
 }
 
 .coverImage{
-    width: 50%;
+    width: 60%;
     height: 100%;
     background-image: url(/resources/images/coverfoto-cake.jpg);
     background-position: center;
@@ -60,7 +60,7 @@ header h1{
 }
 
 .coverCTA{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,4 +92,73 @@ header h1{
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+}
+.ctaButton:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+.ctaButton:active{
+    scale: .95;
+}
+.ChosenProductsWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ChosenProductsWrapper > p {
+    padding: 50px 0;
+    font-size: 20px;
+    width: 50%;
+}
+.ChosenProductsWrapper h2{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.cakeCard {
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.cakeCard .image {
+    width: 100%;
+    height: 300px;
+    background-image: url(/resources/images/cake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cakeCard .cakeInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.cakeInfo .button {
+    margin: 10px 10px;
+    padding: 5px 15px; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.cakeInfo .button:hover{
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+.cupcakeWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cupcakeGrid{
+    display: grid; 
+}
+.cupcakeGrid h2{
+    font-size: 30px;
+    padding: 20px 0;
 }
