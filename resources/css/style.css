@@ -3,7 +3,8 @@
 :root {
     --color-title: rgb(255, 156, 161);
     --color-white:  rgb(255, 255, 255);
-    --color-black: rgb(53, 57, 53); 
+    --color-black: rgb(53, 57, 53);
+    --color-gray: rgb(236, 236, 236);
     --color-CallToAction: rgba(71, 209, 186, 1.0);
     --font-fontfamily: "Dosis", sans-serif;
     --font-weight-large: 700; 
@@ -50,13 +51,29 @@ header h1{
     font-weight: var(--font-weight-large);
 }
 
-.coverImage{
+.coverImageMain{
     width: 60%;
     height: 100%;
     background-image: url(/resources/images/coverfoto-cake.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.coverImagePages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/resources/images/coverfoto-cake.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coverImagePages h1{
+    font-size: 100px;
+    color: var(--color-white);
+    text-shadow: var(--text-Shadow);
 }
 
 .coverCTA{
@@ -100,16 +117,21 @@ header h1{
 .ctaButton:active{
     scale: .95;
 }
-.ChosenProductsWrapper{
+.pageInfoWrapper {
+    background-color: var(--color-CallToAction);
+}
+.pageInfoWrapper > p{
+    padding: 50px 0;
+    font-size: 25px;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-white);
+    width: 50%;
+}
+.ChosenProductsWrapper, .pageInfoWrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.ChosenProductsWrapper > p {
-    padding: 50px 0;
-    font-size: 20px;
-    width: 50%;
 }
 .ChosenProductsWrapper h2{
     font-size: 30px;
@@ -149,16 +171,95 @@ header h1{
     background-color: #e9e9e9;
     cursor: pointer;
 }
-.cupcakeWrapper{
+.cupcakeWrapper, .cakeWrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.cupcakeGrid{
-    display: grid; 
-}
-.cupcakeGrid h2{
+.cupcakeWrapper h2, .cakeWrapper h2{
     font-size: 30px;
     padding: 20px 0;
+}
+.cupcakeGrid, .cakeGrid, .ChosenGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: var(--color-white);
+}
+.formContainer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer h2{
+    font-size: 30px;
+    padding: 20px 0;
+    color: var(--color-title);
+}
+.formContainer label{
+    display:block;
+}
+.formContainer input{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.formContainer textarea{
+    width: 250px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.formContainer #submit{
+    background-color: var(--color-CallToAction);
+    color: var(--color-white);
+    font-weight: var(--font-weight-large);
+    font-size: 20px;
+    width: inherit;
+    height: inherit;
+    padding: 10px 15px;
+    margin: 0x 0 20px 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.formContainer #submit:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+.formContainer #submit:active{
+    scale: .95;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: var(--color-gray);
+}
+footer img{
+    width: 30px;
+    margin: 0 10px;
+}
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+footer .links a{
+    display: flex;
+    text-decoration: none;
+    color:var(--color-title);
+    font-weight: var(--font-weight-medium);
 }
