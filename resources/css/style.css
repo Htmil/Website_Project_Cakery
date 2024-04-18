@@ -85,8 +85,8 @@ header h1{
     align-items: center;
 }
 .logo{
-    width: 115px;
-    height: 115px;
+    width: 200px;
+    height: 200px;
     background-image: url(/resources/images/logo_munamii.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -262,6 +262,8 @@ footer .links{
 }
 footer .links a{
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: blue;
     font-weight: var(--font-weight-medium);
@@ -273,4 +275,49 @@ footer .links a{
 }
 footer .links a:hover{
     scale: 1.05;
+}
+
+@media (max-width: 1050px) {
+    
+    header{
+        flex-direction: column;
+    }
+    .coverImageMain {
+        width: 100%;
+    }
+    .coverCTA {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.601);
+        height: 100%;
+    }
+    .cupcakeGrid, .cakeGrid, .ChosenGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pageInfoWrapper > p {
+        width: 80%;
+      }
+      footer .links {
+        width: 80%;
+      }
+      nav {
+        top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+}
+@media (max-width: 650px) {
+    .cupcakeGrid, .cakeGrid, .ChosenGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    nav a{
+        padding: 20px;
+    }
+    footer .links a{
+        display: block;
+    }
 }
