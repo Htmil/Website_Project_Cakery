@@ -23,7 +23,7 @@ if (getLastPart() == "index.html") {
   clearDiv("ChosenGrid");
 
   thisWeek.forEach((cake) => {
-    thisWeeksItems.innerHTML += generateCakeCard(cake);
+    thisWeeksItems.innerHTML += generateCakeCard(cake, "resources/images");
   });
 }
 if (getLastPart() == "products.html") {
@@ -127,19 +127,19 @@ if (getLastPart() == "products.html") {
   clearDiv("cupcakeGrid");
 
   cupcakes.forEach((cake) => {
-    CupCakeGrid.innerHTML += generateCakeCard(cake);
+    CupCakeGrid.innerHTML += generateCakeCard(cake, "../resources/images");
   });
 
   cakes.forEach((cake) => {
-    cakeGrid.innerHTML += generateCakeCard(cake);
+    cakeGrid.innerHTML += generateCakeCard(cake, "../resources/images");
   });
 }
 
-function generateCakeCard(cake) {
+function generateCakeCard(cake,path) {
   return `
       <div class="cakeCard">
           <div class="imageContainter">
-              <div class="image" style="background-image: url('../resources/images/${cake.imageName}')"></div>
+              <div class="image" style="background-image: url('${path}/${cake.imageName}')"></div>
           </div>
           <div class="cakeInfo">
               <p class="productName">${cake.productName}</p>
