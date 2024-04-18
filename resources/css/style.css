@@ -55,7 +55,7 @@ header h1 {
 .coverImageMain {
   width: 60%;
   height: 100%;
-  background-image: url(/resources/images/coverfoto-cake.jpg);
+  background-image: url(../images/coverfoto-cake.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,13 +71,13 @@ header h1 {
   background-size: cover;
 }
 .imageAbout {
-    background-image: url(/resources/images/Cover_about.jpg);
+    background-image: url(../images/Cover_about.jpg);
 }
 .imageContact{
-    background-image: url(/resources/images/Cover_contact.jpg);
+    background-image: url(../images/Cover_contact.jpg);
 }
 .imageProd{
-    background-image: url(/resources/images/Cover_prod.jpg);
+    background-image: url(../images/Cover_prod.jpg);
 }
 .coverImagePages h1 {
   font-size: 100px;
@@ -95,7 +95,7 @@ header h1 {
 .logo {
   width: 200px;
   height: 200px;
-  background-image: url(/resources/images/logo_munamii.png);
+  background-image: url(../images/logo_munamii.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,7 +165,7 @@ header h1 {
 .cakeCard .image {
   width: 100%;
   height: 300px;
-  background-image: url(/resources/images/cake.jpg);
+  background-image: url(../images/cake.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
